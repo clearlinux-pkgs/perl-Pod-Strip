@@ -4,7 +4,7 @@
 #
 Name     : perl-Pod-Strip
 Version  : 1.02
-Release  : 12
+Release  : 13
 URL      : https://cpan.metacpan.org/authors/id/D/DO/DOMM/Pod-Strip-1.02.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DO/DOMM/Pod-Strip-1.02.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libp/libpod-strip-perl/libpod-strip-perl_1.02-2.debian.tar.xz
@@ -101,4 +101,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.2/Pod/Strip.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Pod/Strip.pm
