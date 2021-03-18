@@ -4,7 +4,7 @@
 #
 Name     : perl-Pod-Strip
 Version  : 1.100
-Release  : 14
+Release  : 15
 URL      : https://cpan.metacpan.org/authors/id/D/DO/DOMM/Pod-Strip-1.100.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DO/DOMM/Pod-Strip-1.100.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libp/libpod-strip-perl/libpod-strip-perl_1.02-2.debian.tar.xz
@@ -80,6 +80,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Pod-Strip
+cp %{_builddir}/Pod-Strip-1.100/LICENSE %{buildroot}/usr/share/package-licenses/perl-Pod-Strip/9101f7db7b2a1098eca2dce7234116943c939328
 cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Pod-Strip/ee672cd407ca85488561241114a203da313d6f7e
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
@@ -100,8 +101,9 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files license
 %defattr(0644,root,root,0755)
+/usr/share/package-licenses/perl-Pod-Strip/9101f7db7b2a1098eca2dce7234116943c939328
 /usr/share/package-licenses/perl-Pod-Strip/ee672cd407ca85488561241114a203da313d6f7e
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/Pod/Strip.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Pod/Strip.pm
