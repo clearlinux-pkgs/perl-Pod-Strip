@@ -4,7 +4,7 @@
 #
 Name     : perl-Pod-Strip
 Version  : 1.100
-Release  : 17
+Release  : 18
 URL      : https://cpan.metacpan.org/authors/id/D/DO/DOMM/Pod-Strip-1.100.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DO/DOMM/Pod-Strip-1.100.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libp/libpod-strip-perl/libpod-strip-perl_1.02-2.debian.tar.xz
